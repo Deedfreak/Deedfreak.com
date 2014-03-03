@@ -1,0 +1,738 @@
+@font-face {
+    font-family: "GoudyTrajan";
+    font-style: normal;
+    font-weight: bold;
+    src: 
+    	url("../resources/246BEC_1_0.eot?#iefix") 
+  		format("embedded-opentype"), 
+  		url("../resources/246BEC_1_0.woff") 
+  		format("woff"), 
+  		url("../resources/246BEC_1_0.ttf") 
+  		format("truetype");
+}
+
+body, html {width: 100%; height: 100%;}
+body {
+	background: url('../resources/bg.jpg') no-repeat fixed left top #000;
+	background-size: cover;
+	background-position: fixed;
+	padding: 0; 
+	margin: 0;
+	font-family: Trebuchet MS,arial,helvetica,sans-serif;
+    color: #e0dfe1;
+}
+
+* {
+	box-sizing:border-box;
+    -moz-box-sizing: border-box;
+}
+
+a {
+    color: #E9E2BA;
+}
+
+a img {
+    border: none;
+}
+
+#header {
+	background: url('../resources/headerbar.png') repeat-x scroll center top transparent;
+	box-shadow: 0 0 16px 2px black;
+	width: 100%;
+	position: fixed;
+	z-index: 5000;
+}
+
+#header > header {
+	clear: both;
+	height: 70px;
+	margin: 0 auto;
+	padding: 0;
+	width: 90%;
+    min-width: 1024px;
+	z-index: 101;
+	position: relative;
+}
+
+#header > header > nav {
+	float: left;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+#header > header > nav > ul {
+    white-space: nowrap;
+    display: inline-block;
+    margin: 0;
+    list-style-type: none;
+}
+
+#header > header > nav > ul > li {
+	background: url("../resources/nav-item-divider.png") no-repeat scroll 16px 50% transparent;
+    padding-left: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+#header > header > nav > ul > li:first-child {
+	background: url("/resources/deed-icon-5.png") no-repeat scroll left center transparent;
+	padding-left: 30px;
+}
+
+#header li > a {
+    display: block;
+    line-height: 60px;
+    margin: 0;
+    padding: 10px 0 0;
+    color: #E9E2BA;
+    font-family: 'GoudyTrajan';
+    font-size: 17px;
+    font-weight: bold;
+    padding: 8px 12px;
+    text-decoration: none;
+    outline: medium none !important;
+}
+
+#header li > a:hover {
+	color: #fffff1;
+	text-shadow: 0 0 6px #E9E2BA, 0 0 3px #E9E2BA;
+}
+
+#header li > a.login, #header li > a.character {
+	padding-right: 50px;
+	position: relative;
+}
+
+.character:after {
+    background: no-repeat scroll right 0 transparent;
+    background-size: 70px 70px;
+    content: "";
+    height: 70px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 225px;
+    z-index: 11230120310312;
+}
+
+.character.Burglar:after {
+    background-image: url("../resources/Burglar-icon.png");
+}
+.character.Captain:after {
+    background-image: url("../resources/Captain-icon.png");
+}
+.character.Champion:after {
+    background-image: url("../resources/Champion-icon.png");
+}
+.character.Guardian:after {
+    background-image: url("../resources/Guardian-icon.png");
+}
+.character.Hunter:after {
+    background-image: url("../resources/Hunter-icon.png");
+}
+.character.Lore-master:after {
+    background-image: url("../resources/Lore-master-icon.png");
+}
+.character.Minstrel:after {
+    background-image: url("../resources/Minstrel-icon.png");
+}
+.character.Rune-keeper:after {
+    background-image: url("../resources/Rune-keeper-icon.png");
+}
+.character.Warden:after {
+    background-image: url("../resources/Warden-icon.png");
+}
+
+.login:after {
+	background: url("../resources/the-one-ring.png") no-repeat scroll 0 0 transparent;
+    content: "";
+    height: 62px;
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    width: 50px;
+}
+
+#content {
+	margin: 0 auto;
+	padding: 105px 0 0;
+	width: 95%;
+    min-width: 1024px;
+    min-height: 600px;
+}
+
+#content nav.sub {
+	width: 260px;
+	float: left;
+	padding: 10px 10px 0 0;
+	position: absolute;
+	z-index: 102;
+}
+
+#content nav.sub:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	right: -10px;
+	background: url('../resources/content-bg.png') no-repeat scroll 0px 0 transparent;
+	height: 100%;
+	width: 5%;
+	z-index: 10000;
+    min-height: 400px;
+}
+
+#content nav.sub > ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#content nav.sub > ul > li {
+	width: 100%;
+	height: 24px;
+}
+
+#content nav.sub > ul > li > a {
+	color: #fff;
+	font-weight: bold;
+	text-align: right;
+	width: 100%;
+	display: block;
+	font-family: 'GoudyTrajan';
+	text-shadow: 0 0 3px #000000, 1px 2px 3px #000000;
+    white-space: nowrap;
+    font-size: 15px;
+    line-height: 15px;
+    text-decoration: none
+}
+
+#content nav.sub > ul > li > a.active {
+    color: #F8F3BD;
+    text-shadow: 2px 2px 3px black;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+#content section {
+	background: none no-repeat scroll 0 0 rgba(0, 0, 0, .85);
+	box-shadow: 0 0 15px rgba(0, 0, 0, .9);
+	min-height: 500px;
+	color: #e0dfe1;
+	padding: 20px;
+	margin-left: 270px;
+	position: relative;
+    margin-right: 160px;
+}
+
+#content section.tool {
+    min-width: 900px;
+}
+
+#content h1 {
+	background: url("../resources/header-decor.png") no-repeat scroll 0 19px transparent;
+    content: "";
+    display: block;
+    height: 54px;
+    z-index: 1;
+    position: relative;
+    text-shadow: 0 0 20px black, 0 0 8px rgba(0, 0, 0, 0.8);
+    margin: 0 0 16px 280px;
+    font-family: 'GoudyTrajan';
+    font-weight: bold;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.3846em;
+    color: #fff;
+    padding: 0 0 50px 61px;
+}
+
+#content h1.signup {
+    margin-left: 0;
+    margin-top: 45px;
+}
+
+#content h2 {
+    text-decoration: underline;
+    color: #fffff1;
+}
+
+footer {
+    min-height: 176px;
+    background: url("../resources/footerbar.png") repeat-x scroll 0 0 transparent;
+    padding-top: 45px;
+    width: 100%;
+    padding: 25px 0 30px 0;
+}
+
+#header li.dropdown ul {
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(0,0,0,.9);
+    border-color: rgba(255, 255, 255, 0.75);
+    border-radius: 0 0 2px 2px;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    box-shadow: 0 9px 13px rgba(0, 0, 0, 0.59);
+    margin: -7px 0 0 -11px;
+    padding: 12px 0;
+    list-style-type: none;
+    -webkit-transition: all linear 0.2s 0s;
+    -moz-transition: all linear 0.2s 0s;
+    -o-transition: all linear 0.2s 0s;
+    transition: all linear 0.2s 0s;
+    width: auto;
+    min-width: 224px;
+    top: 100%;
+    visibility: hidden;
+}
+
+#header li.dropdown:hover ul {
+    opacity: 1;
+    visibility: visible;
+    z-index: 99999;
+}
+
+#header li.dropdown ul > li {
+    padding: 0;
+    float: none;
+    display: block;
+    font-weight: bold;
+    margin: 0;
+}
+
+#header li.dropdown ul > li > a {
+    font-size: 15px;
+    white-space: nowrap;
+    line-height: 20px;
+}
+
+.deed, .faction {
+    display: inline-block;
+    width: 390px;
+    margin: 0 10px 10px;
+    vertical-align: top;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+
+.deed img {
+    vertical-align: middle;
+}
+
+.deed small.note {
+    padding-top: 4px;
+    display: block;
+}
+
+.deed:hover, .deed.include {
+    border-left: 3px solid rgba(255, 255, 255, .6);
+    border-right: 3px solid rgba(255, 255, 255, .6);
+    background-color: rgba(255, 255, 255, .1)
+}
+
+.deed .title {
+    margin-bottom: 2px;
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.deed small {
+    color: #666;
+    padding-right: 14px;
+}
+
+.deed a {
+    text-decoration: none;
+}
+
+.deed a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.deed.deed-icon-1,
+.deed.deed-icon-2,
+.deed.deed-icon-3, 
+.deed.deed-icon-4, 
+.deed.deed-icon-5, 
+.deed.deed-icon-6 
+{
+    padding-left: 50px;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+}
+
+.deed.mount img, .loggedin .deed.mount.completed img {
+    opacity: 1;
+}
+
+.loggedin .deed.mount img {
+    opacity: .3;
+}
+
+.loggedin .deed.deed-icon-1.completed, .deed.deed-icon-1 {
+    background-image: url('../resources/deed-icon-1.png');
+}
+
+.loggedin .deed.deed-icon-1 {
+    background-image: url('../resources/deed-icon-1-gray.png');
+}
+
+.loggedin .deed.deed-icon-2.completed, .deed.deed-icon-2 {
+    background-image: url('../resources/deed-icon-2.png');
+}
+
+.loggedin .deed.deed-icon-2 {
+    background-image: url('../resources/deed-icon-2-gray.png');
+}
+
+.loggedin .deed.deed-icon-3.completed, .deed.deed-icon-3 {
+    background-image: url('../resources/deed-icon-3.png');
+}
+
+.loggedin .deed.deed-icon-3 {
+    background-image: url('../resources/deed-icon-3-gray.png');
+}
+
+.loggedin .deed.deed-icon-4.completed, .deed.deed-icon-4 {
+    background-image: url('../resources/deed-icon-4.png');
+}
+
+.loggedin .deed.deed-icon-4 {
+    background-image: url('../resources/deed-icon-4-gray.png');
+}
+
+.loggedin .deed.deed-icon-5.completed, .deed.deed-icon-5 {
+    background-image: url('../resources/deed-icon-5.png');
+}
+
+.loggedin .deed.deed-icon-5 {
+    background-image: url('../resources/deed-icon-5-gray.png');
+}
+
+.loggedin .deed.deed-icon-6.completed, .deed.deed-icon-6 {
+    background-image: url('../resources/deed-icon-6.png');
+}
+
+.loggedin .deed.deed-icon-6 {
+    background-image: url('../resources/deed-icon-6-gray.png');
+}
+
+aside {
+    width: 160px;
+    right: 3%;
+    position: absolute;
+    z-index: 102;
+    top: 190px;
+}
+
+.virtue {
+    display: inline-block;
+    width: 19%;
+    margin: 0;
+    vertical-align: top;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none
+}
+
+.virtue .icon img {
+    border: none;
+}
+
+label {
+    display: inline-block;
+    width: 175px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    font-family: "Verdana";
+    font-size: 14px;
+    padding: 4px;
+    border-radius: 3px;
+    border: 1px solid #beb89b;
+    background-color: rgba(225, 208, 167, .6);
+    width: 225px;
+}
+
+input[type="radio"] {
+    text-align: center;
+    width: auto;
+}
+
+.class_select {
+    width: 100%;
+}
+
+.class_select label {
+    width: 70px;
+    text-align: center;
+}
+
+textarea {
+    height: 200px;
+}
+
+section .half {
+    width: 46%;
+    display: inline-block;
+    margin: 0 2%;
+    vertical-align: top;
+}
+
+section .half:first-child {
+    margin-left: 0;
+}
+
+section .half:last-child {
+    margin-right: 0;
+}
+
+#footer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#footer .block {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#footer .block h3 {
+    text-decoration: underline;
+    margin: 0 0 5px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+#footer .block ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#footer .block:first-child {
+    margin-left: 10%;
+}
+
+#footer a {
+    color: #999;
+    font-size: 12px;
+}
+
+.character-list img {
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: -9px;
+}
+
+.multi {
+    vertical-align: top;
+    padding: 0 15px;
+}
+
+.multi:first-child {
+    margin-right: 5%;
+}
+
+.multi .overview-tab {
+    position: relative;
+    border-radius: 5px;
+    height: 80px;
+    padding: 9px;
+    width: 100%;
+    display: inline-block;
+    border-left: 3px solid rgba(255, 255, 255, .6);
+    border-right: 3px solid rgba(255, 255, 255, .6);
+    margin: 0 0 25px;
+}
+
+.multi .overview-tab:hover {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.multi .progress-bar {
+    margin: 4px 0 0 0;
+    height: 22px;
+    width: 70%;
+    left: 15%;
+    bottom: 11px;
+    position: absolute;
+}
+
+.multi .percent {
+    font-size: 14px;
+    top: -5px;
+}
+
+.multi a {
+    font-size: 19px;
+    padding: 5px 7px;
+    text-decoration: none;
+}
+
+.completeTab {
+    margin-right: 50px;
+}
+
+.completeTab img {
+    margin-top: 2px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.filter {
+    display: none;
+    border-bottom: 2px solid #000;
+    width: 100%;
+    margin-left: -10px;
+    padding-left: 25px;
+    padding-bottom: 7px;
+    margin-top: -7px;
+}
+
+.loggedin .filter {
+    display: block;
+}
+
+.tip {
+    float: right;
+    margin: 7px 7px 0 0
+}
+
+.big_map {
+    position: relative;
+    width: 100%;
+}
+
+.big_map img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    opacity: .7;
+}
+
+.big_map_tab {
+    position: absolute;
+    display: block;
+    color: #fffff1;
+    width: 200px;
+    margin-left: -100px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.big_map_tab .name {
+    display: none;
+}
+
+.big_map_tab:hover .name {
+    display: inline;
+}
+
+.big_map_tab .percent {
+    text-shadow: 0 0 2px #E9E2BA, 0 0 1px #E9E2BA;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.big_map_tab small {
+    font-size: 11px;
+}
+
+.faction h3 {
+    border-bottom: 1px solid #fffff1;
+}
+
+.faction .deed {
+    margin-left: 0;
+}
+
+.progress-bar {
+    width: 100%;
+    display: block;
+    border-radius: 150px;
+    border: 2px solid #fff574;
+    height: 35px;
+    background-color: #0a0a0a;
+    margin-bottom: 7px;
+    position: relative;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.progress-bar .bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #401a0a;
+    width: 0%;
+    color: #fff;
+    height: 100%;
+    border-radius: 150px;
+}
+
+.progress-bar .percent {
+    z-index: 11;
+    position: relative;
+}
+
+.type-sum {
+    list-style-type: none;
+    margin: 0 0 0 15px;
+    padding: 0 5px 0 0;
+}
+
+.type-sum li {
+    height: 32px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    padding: 7px 13px 0 45px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.type-sum li span {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    background-color: rgba(255, 255, 255, .2);
+    width: 0;
+    display: block;
+    height: 100%;
+}
+
+.type-sum li.icon-1 {
+    background-image: url('/resources/deed-icon-1.png');
+}
+
+.type-sum li.icon-2 {
+    background-image: url('/resources/deed-icon-2.png');
+}
+
+.type-sum li.icon-3 {
+    background-image: url('/resources/deed-icon-3.png');
+}
+
+.type-sum li.icon-4 {
+    background-image: url('/resources/deed-icon-4.png');
+}
+
+.type-sum li.icon-5 {
+    background-image: url('/resources/deed-icon-5.png');
+}
+
+.type-sum li.icon-6 {
+    background-image: url('/resources/deed-icon-6.png');
+}

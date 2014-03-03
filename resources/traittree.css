@@ -1,0 +1,347 @@
+#class-select span {
+  width: 100px;
+  display: inline-block;
+}
+
+#traittree {
+  width: 885px;
+  height: 683px;
+  border: 1px solid #293049;
+  background-color: #000;
+  font-family: 'GoudyTrajan';
+  font-size: 12px;
+  margin: 0 auto;
+}
+
+#tree-select, #tree-spend {
+  background-repeat: no-repeat;
+  background-position: 0 35px;
+  position: relative;
+}
+
+#tree-spend {
+  display: none;
+  background-position: 2px 35px;
+}
+
+#tree-select .tt-section {
+  height: 577px;
+  margin: 0 0 0 86px;
+  position: relative;
+  letter-spacing: 0;
+  font-size: 0;
+}
+
+#tree-spend .tt-section {
+  height: 570px;
+  margin: 0 0 0 34px;
+  position: relative;
+  padding-top: 67px;
+  letter-spacing: 0;
+  font-size: 0;
+  word-spacing: 0;
+  vertical-align: top;
+}
+
+.tt-tree-mastery {
+  display: inline-block;
+  width: 50px;
+  height: 100%;
+  margin: 0;
+  margin-left: 4px;
+  margin-top: 82px;
+  margin-right: 20px;
+}
+
+#tree-select .tt-tree {
+  display: inline-block;
+  width: 250px;
+  margin: 145px 0 0 4px;
+}
+
+#tree-spend .tt-tree {
+  display: inline-block;
+  width: 252px;
+  margin: 0 0 0 4px;
+  height: 100%;
+  position: relative;
+  vertical-align: top;
+  padding-top: 19px;
+  padding-left: 4px;
+}
+
+#tree-spend .tt-tree:last-child {
+  padding-left: 2px;
+}
+
+.tt-footer {
+  height: 100px;
+  background-repeat: no-repeat;
+  margin-left: 4px;
+  padding: 35px 0 0 88px;
+}
+
+#tree-select .tt-footer {
+  background-image: url("/resources/footer-select.jpg");
+}
+
+.tt-select-tree {
+  height: 35px;
+  width: 208px;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 42px;
+}
+
+.tt-select-tree:last-child {
+  margin-right: 0;
+}
+
+.tt-trait {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  /*background-color: #000;*/
+  margin: 0 10px 8px;
+  padding: 3px 4px 49px;
+  background-color: #000;
+  position: relative;
+  cursor: pointer;
+}
+
+.tt-trait.empty {
+  opacity: 0
+}
+
+.tt-trait .points {
+  position: absolute;
+  top: 38px;
+  width: 100%;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: default;
+  font-family: 'Verdana';
+  font-weight: lighter;
+  color: #fff;
+  left: 1px;
+  letter-spacing: 0.01em;
+}
+
+.tt-trait .points:after {
+  border-color: rgba(254, 167, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  border-image: none;
+  border-right: 20px solid rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 5px 20px 20px;
+  height: 0;
+  left: 0;
+  content: "";
+  position: absolute;
+  top: 90%;
+}
+
+.tt-trait.gray {
+  background-color: transparent;
+}
+
+.tt-trait.gray .points {
+  display: none;
+}
+
+.tt-trait.max .spend, .tt-trait.max .slash {
+  display: none;
+}
+
+/* Disabled untill I get better backgrounds
+.tt-trait.spent {
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.tt-trait.spent .points:after {
+  border-top-color: rgba(255, 255, 255, .3);
+}
+*/
+.tt-tree {
+  position: relative;
+}
+
+.bonuses {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 32px;
+}
+
+.bonus {
+  display: none;
+  margin-bottom: 28px;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.icon {
+  height: 32px;
+  width: 32px;  
+}
+
+.Burglar .icon {  background-image: url("/resources/burglar-tree-icons.png");}
+.Burglar #tree-select { background-image: url("/resources/trees/brg0.jpg"); }
+.Burglar #tree-spend.tree-0 { background-image: url("/resources/trees/brg1.jpg"); }
+.Burglar #tree-spend.tree-1 { background-image: url("/resources/trees/brg2.jpg"); }
+.Burglar #tree-spend.tree-2 { background-image: url("/resources/trees/brg3.jpg"); }
+
+
+.Captain .icon {  background-image: url("/resources/captain-tree-icons.png");}
+.Captain #tree-select { background-image: url("/resources/trees/cpt0.jpg"); }
+.Captain #tree-spend.tree-0 { background-image: url("/resources/trees/cpt1.jpg"); }
+.Captain #tree-spend.tree-1 { background-image: url("/resources/trees/cpt2.jpg"); }
+.Captain #tree-spend.tree-2 { background-image: url("/resources/trees/cpt3.jpg"); }
+
+
+.Champion .icon {  background-image: url("/resources/champion-tree-icons.png");}
+.Champion #tree-select { background-image: url("/resources/trees/cmp0.jpg"); }
+.Champion #tree-spend.tree-0 { background-image: url("/resources/trees/cmp1.jpg"); }
+.Champion #tree-spend.tree-1 { background-image: url("/resources/trees/cmp2.jpg"); }
+.Champion #tree-spend.tree-2 { background-image: url("/resources/trees/cmp3.jpg"); }
+
+
+.Guardian .icon {  background-image: url("/resources/guardian-tree-icons.png");}
+.Guardian #tree-select { background-image: url("/resources/trees/grd0.jpg"); }
+.Guardian #tree-spend.tree-0 { background-image: url("/resources/trees/grd1.jpg"); }
+.Guardian #tree-spend.tree-1 { background-image: url("/resources/trees/grd2.jpg"); }
+.Guardian #tree-spend.tree-2 { background-image: url("/resources/trees/grd3.jpg"); }
+
+
+.Hunter .icon {  background-image: url("/resources/hunter-tree-icons.png");}
+.Hunter #tree-select { background-image: url("/resources/trees/hnt0.jpg"); }
+.Hunter #tree-spend.tree-0 { background-image: url("/resources/trees/hnt1.jpg"); }
+.Hunter #tree-spend.tree-1 { background-image: url("/resources/trees/hnt2.jpg"); }
+.Hunter #tree-spend.tree-2 { background-image: url("/resources/trees/hnt3.jpg"); }
+
+.Lore-master .icon {  background-image: url("/resources/lore-master-tree-icons.png");}
+.Lore-master #tree-select { background-image: url("/resources/trees/lm0.jpg"); }
+.Lore-master #tree-spend.tree-0 { background-image: url("/resources/trees/lm1.jpg"); }
+.Lore-master #tree-spend.tree-1 { background-image: url("/resources/trees/lm2.jpg"); }
+.Lore-master #tree-spend.tree-2 { background-image: url("/resources/trees/lm3.jpg"); }
+
+
+.Minstrel .icon {  background-image: url("/resources/minstrel-tree-icons.png");}
+.Minstrel #tree-select { background-image: url("/resources/trees/min0.jpg"); }
+.Minstrel #tree-spend.tree-0 { background-image: url("/resources/trees/min1.jpg"); }
+.Minstrel #tree-spend.tree-1 { background-image: url("/resources/trees/min2.jpg"); }
+.Minstrel #tree-spend.tree-2 { background-image: url("/resources/trees/min3.jpg"); }
+
+
+.Rune-keeper .icon {  background-image: url("/resources/rune-keeper-tree-icons.png");}
+.Rune-keeper #tree-select { background-image: url("/resources/trees/rk0.jpg"); }
+.Rune-keeper #tree-spend.tree-0 { background-image: url("/resources/trees/rk1.jpg"); }
+.Rune-keeper #tree-spend.tree-1 { background-image: url("/resources/trees/rk2.jpg"); }
+.Rune-keeper #tree-spend.tree-2 { background-image: url("/resources/trees/rk3.jpg"); }
+
+
+.Warden  .icon {  background-image: url("/resources/warden-tree-icons.png");}
+.Warden #tree-select { background-image: url("/resources/trees/wrd0.jpg"); }
+.Warden #tree-spend.tree-0 { background-image: url("/resources/trees/wrd1.jpg"); }
+.Warden #tree-spend.tree-1 { background-image: url("/resources/trees/wrd2.jpg"); }
+.Warden #tree-spend.tree-2 { background-image: url("/resources/trees/wrd3.jpg"); }
+
+
+.skill {
+
+}
+
+
+
+span.ttF1 {
+    color: #99FF00;
+}
+
+span.ttF2 {
+    color: #00E500;
+}
+
+span.ttF3 {
+    color: #009900;
+}
+
+span.ttF4 {
+    color: #FF0000;
+}
+
+span.ttF5 {
+    color: #C31C1F;
+}
+
+span.ttF6 {
+    color: #00FFDD;
+}
+
+span.ttF7 {
+    color: #666666;
+}
+
+span.ttF8 {
+    color: #FF00FF;
+}
+
+span.ttF9 {
+    color: #C3B585;
+}
+
+span.ttF10 {
+    color: #CCCC7F;
+}
+
+span.ttF11 {
+    color: #C3B51F;
+}
+
+span.ttFT9, span.ttF12, span.ttF13, span.ttF14 {
+    font-size: 16px;
+}
+
+#tt-tooltip {
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 2px ridge #959595;
+  border-radius: 4px;
+  width: 240px;
+  padding: 8px;
+  position: absolute;
+  z-index: 10;
+  display: none;
+  height: auto;
+  font-family: 'Verdana';
+  font-size: 12px;
+  font-weight: lighter;
+  padding-top: 44px;
+}
+
+div.ttImg {
+  background-repeat: no-repeat;
+  height: 32px;
+  left: 8px;
+  position: absolute;
+  top: 10px;
+  width: 32px;
+}
+
+div.ttName {
+  left: 52px;
+  max-height: 36px;
+  max-width: 180px;
+  position: absolute;
+  top: 10px;
+  font-family: 'GoudyTrajan';
+  font-size: 14px;
+  font-weight: lighter;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+
+.gray {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+}
